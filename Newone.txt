@@ -1,1 +1,9 @@
-Thank you for 
+cd C:\Users\harsh\OneDrive\Desktop
+cd "push file"
+git init
+git add .
+git commit -m "Second Commit"
+git remote -v
+git remote add origin https://github.com/harshtyagiin2025-gif/GitDemo
+git branch
+git push -u origin master
