@@ -7,3 +7,40 @@ git remote -v
 git remote add origin https://github.com/harshtyagiin2025-gif/GitDemo
 git branch
 git push -u origin master
+
+🔹 Git Push Workflow (1-Line Guide)
+cd "C:\Users\harsh\OneDrive\Desktop\push file"   → Go to project folder
+git status                                       → Check changes
+git add .                                       → Stage all changes
+git commit -m "Your message"                   → Commit changes
+git push                                        → Push to GitHub
+
+Agar first time push hai ya remote nahi set, use:
+git push -u origin master
+
+🔹 Common Git Commands for Daily Use
+| Command                       | Purpose                                 | Example                                        |
+| ----------------------------- | --------------------------------------- | ---------------------------------------------- |
+| `git status`                  | Check which files are modified / staged | `git status`                                   |
+| `git add <file>`              | Stage specific file                     | `git add index.html`                           |
+| `git add .`                   | Stage all changes                       | `git add .`                                    |
+| `git commit -m "message"`     | Save changes locally                    | `git commit -m "Fixed bug"`                    |
+| `git log`                     | See commit history                      | `git log`                                      |
+| `git branch`                  | Show current branch                     | `git branch`                                   |
+| `git checkout <branch>`       | Switch branch                           | `git checkout dev`                             |
+| `git checkout -b <branch>`    | Create + switch branch                  | `git checkout -b feature1`                     |
+| `git remote -v`               | Show remote repo URL                    | `git remote -v`                                |
+| `git remote add origin <url>` | Connect GitHub repo                     | `git remote add origin https://github.com/...` |
+| `git push`                    | Push changes to GitHub                  | `git push`                                     |
+| `git push -u origin master`   | First-time push                         | `git push -u origin master`                    |
+| `git pull`                    | Pull latest changes from GitHub         | `git pull origin master`                       |
+| `git diff`                    | See changes not yet staged              | `git diff`                                     |
+
+🔹 Common Errors & Fixes
+| Error                                   | Solution                                                 |
+| --------------------------------------- | -------------------------------------------------------- |
+| `fatal: remote origin already exists`   | Delete existing remote first: `git remote remove origin` |
+| `error: failed to push some refs`       | Pull first: `git pull origin master --rebase`, then push |
+| `permission denied (publickey)`         | Setup SSH key or use HTTPS URL for remote                |
+| `nothing to commit, working tree clean` | No changes staged; check with `git status`               |
+
